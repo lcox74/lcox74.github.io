@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{339:function(n,t,e){},404:function(n,t,e){"use strict";e(339)},421:function(n,t,e){"use strict";e.r(t);e(404);var c=e(42),o=Object(c.a)({},(function(){var n=this.$createElement;return(this._self._c||n)("footer",[this._v("\n    Copyright © Lachlan Cox 2020.\n")])}),[],!1,null,"9c7f4b82",null);t.default=o.exports}}]);
