@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <clipPath id="clip-Design_2">
+      <rect width="600" height="600"/>
+    </clipPath>
+  </defs>
+  <g id="Design_2" data-name="Design 2" clip-path="url(#clip-Design_2)">
+    <rect width="600" height="600" fill="#f9f9f9"/>
+    <g id="Group_15" data-name="Group 15" transform="translate(-4.734 207.002)">
+      <g id="Group_9" data-name="Group 9" transform="translate(90.998 35.185)">
+        <g id="Group_3" data-name="Group 3" transform="translate(0 0)">
+          <g id="Group_2" data-name="Group 2" transform="translate(0 0)">
+            <rect id="Rectangle_9" data-name="Rectangle 9" width="117" height="84" rx="3" transform="translate(-0.264 -0.187)" fill="#fff"/>
+            <line id="Line_1" data-name="Line 1" x2="10.525" transform="translate(95.28 10.712)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_2" data-name="Line 2" y1="9.417" transform="translate(105.806 10.712)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_3" data-name="Line 3" y1="1.662" transform="translate(105.806 27.331)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+            <g id="Group_1" data-name="Group 1" transform="translate(13.929 17.407)">
+              <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(-0.193 0.406)" fill="#f9f9f9" stroke="#707070" stroke-width="3">
+                <rect width="26" height="101" rx="5" stroke="none"/>
+                <rect x="1.5" y="1.5" width="23" height="98" rx="3.5" fill="none"/>
+              </g>
+              <line id="Line_4" data-name="Line 4" x2="8.863" transform="translate(2.69 13.248)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_5" data-name="Line 5" x2="8.863" transform="translate(2.69 30.421)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_6" data-name="Line 6" x2="8.863" transform="translate(2.69 50.363)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_7" data-name="Line 7" x2="8.863" transform="translate(2.69 68.09)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_8" data-name="Line 8" x2="8.863" transform="translate(2.69 88.032)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="3"/>
+            </g>
+            <g id="Subtraction_2" data-name="Subtraction 2" transform="translate(63.38 62.273)" fill="#f9f9f9">
+              <path d="M 37.71558380126953 45.77642822265625 L 2.439055681228638 10.50037956237793 L 1.736297488212585 8.568944931030273 L 8.567587852478027 1.737653970718384 L 10.51651954650879 2.450806379318237 L 45.77886199951172 37.71315002441406 L 37.71558380126953 45.77642822265625 Z" stroke="none"/>
+              <path d="M 37.715576171875 43.65511322021484 L 43.65754318237305 37.71315002441406 L 9.690057754516602 3.745664834976196 L 8.95124340057373 3.475318193435669 L 3.472595453262329 8.953967094421387 L 3.734914541244507 9.674915313720703 L 37.715576171875 43.65511322021484 M 37.71559143066406 47.89773941040039 L 1.143202304840088 11.32584953308105 L 2.315673782504746e-06 8.183919906616211 L 8.18392276763916 -2.947998041236133e-07 L 11.34300231933594 1.155969738960266 L 47.90018081665039 37.71315002441406 L 37.71609115600586 47.89723968505859 L 37.71559143066406 47.89773941040039 Z" stroke="none" fill="#707070"/>
+            </g>
+            <g id="Polygon_2" data-name="Polygon 2" transform="translate(53.568 62.643) rotate(-45)" fill="#f9f9f9" stroke-linecap="square">
+              <path d="M 12.05249881744385 14.00853729248047 L 2.350356817245483 14.00853729248047 L 7.201427936553955 3.561580657958984 L 12.05249881744385 14.00853729248047 Z" stroke="none"/>
+              <path d="M 7.201427936553955 7.123163223266602 L 4.700716018676758 12.50853729248047 L 9.702140808105469 12.50853729248047 L 7.201427936553955 7.123163223266602 M 7.201427936553955 -1.9073486328125e-06 L 14.40285778045654 15.50853729248047 L -1.9073486328125e-06 15.50853729248047 L 7.201427936553955 -1.9073486328125e-06 Z" stroke="none" fill="#707070"/>
+            </g>
+            <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(99.308 108.383) rotate(-45)" fill="#f9f9f9" stroke="#707070" stroke-width="3">
+              <path d="M0,0H14.4a0,0,0,0,1,0,0V5.187a7,7,0,0,1-7,7H7a7,7,0,0,1-7-7V0A0,0,0,0,1,0,0Z" stroke="none"/>
+              <path d="M3,1.5h8.4A1.5,1.5,0,0,1,12.9,3V5.187a5.5,5.5,0,0,1-5.5,5.5H7a5.5,5.5,0,0,1-5.5-5.5V3A1.5,1.5,0,0,1,3,1.5Z" fill="none"/>
+            </g>
+            <line id="Line_9" data-name="Line 9" x1="7.755" transform="translate(0 82.173)" fill="none" stroke="#757575" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_10" data-name="Line 10" y2="81.432" transform="translate(0 0.741)" fill="none" stroke="#757575" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_11" data-name="Line 11" x2="116.331" transform="translate(0 0.741)" fill="none" stroke="#757575" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_12" data-name="Line 12" y1="83.093" transform="translate(116.331 0.741)" fill="none" stroke="#757575" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_13" data-name="Line 13" x1="14.403" transform="translate(101.928 83.835)" fill="none" stroke="#757575" stroke-linecap="round" stroke-width="3"/>
+            <line id="Line_14" data-name="Line 14" x2="21.05" transform="translate(45.424 82.173)" fill="none" stroke="#757575" stroke-linecap="round" stroke-width="3"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_14" data-name="Group 14" transform="translate(249.405 23)">
+        <text id="Black_Ink" data-name="Black Ink" transform="translate(0.33 56.998)" fill="#707070" font-size="63" font-family="ArialMT, Arial"><tspan x="0" y="0">Black Ink</tspan></text>
+        <text id="Solutions" transform="translate(0.33 125.998)" fill="#707070" font-size="64" font-family="CenturyGothic, Century Gothic"><tspan x="0" y="0">Solutions</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
