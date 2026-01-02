@@ -1,12 +1,12 @@
 ---
 title: "Running Plex in an LXC on Proxmox"
 date: 2026-01-02
-tags: [homelab, proxmox, lxc]
+tags: [homelab, proxmox, lxc, plex]
 summary: "Got Plex running in an LXC with iGPU passthrough. Now I maintain media infrastructure for family members. This is fine."
 ---
 
 In the age of everything being on a streaming subscription you end up sinking
-alot of money a month watching shows you've watched hundreds of times. It 
+a lot of money a month watching shows you've watched hundreds of times. It 
 mildly annoys me enough that I wanted to digitise the media I have and self
 host a media server so I can easily access them as though it was another 
 streaming service.
@@ -16,8 +16,8 @@ homelab has been completely busted for months running work-related services.
 At this point, I just want my Plex back so I can continue watching old episodes
 of "Top Gear" and "Good Game" on repeat like some kind of sicko.
 
-At some point I'll need to fix up my sonarr, radarr, and lidarr instances to
-so I can properly organise and manage me media, but that is a later problem I
+At some point I'll need to fix up my sonarr, radarr, and lidarr instances
+so I can properly organise and manage my media, but that is a later problem I
 want to watch Clarkson burning a caravan now.
 
 ## The Hardware
@@ -57,9 +57,9 @@ VLANs, this won’t matter. If you are, it can be a surprisingly annoying gotcha
 ## Why an LXC?
 
 I've ran Plex in a full VM and in Docker before but I find running it as an 
-LXC alot lighter and easier to work with. Setting up iGPU passthrough on a LXC
-is quite trivial and it starts up alot faster than the fully isolated VM does.
-I can't be bothered dealing with docker when I can just run it direclty on the
+LXC a lot lighter and easier to work with. Setting up iGPU passthrough on a LXC
+is quite trivial and it starts up a lot faster than the fully isolated VM does.
+I can't be bothered dealing with docker when I can just run it directly on the
 LXC as the only service.
 
 ## Media Storage
@@ -99,7 +99,7 @@ pct create "$CTID" "local:vztmpl/debian-13-standard_13.1-2_amd64.tar.zst" \
     --hostname "svc-plex" \
     --cores "4" \
     --memory "2048" \
-    --swap "512" \
+    --swap "0" \
     --rootfs "local-lvm:16" \
     --net0 "name=eth0,bridge=vmbr0,ip=10.10.20.132/24,gw=10.10.20.1,tag=2"\
     --unprivileged "0" \
@@ -110,12 +110,24 @@ pct create "$CTID" "local:vztmpl/debian-13-standard_13.1-2_amd64.tar.zst" \
 # Update and Install Dependencies
 pct exec "${CTID}" -- bash -eux <<EOF
 
-# Update the System
+export DEBIAN_FRONTEND=noninteractive
+
 apt update
+apt install -y --no-install-recommends \
+  ca-certificates \
+  locales \
+  wget 
+
+# Ensure locales are sane (avoids perl/apt warnings)
+sed -i 's/^# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen
+locale-gen
+update-locale LANG=en_US.UTF-8
+
+# Update the System
 apt upgrade -y
 
 # Install dependencies
-apt install -y curl gnupg ca-certificates nfs-common
+apt install -y curl gnupg nfs-common
 
 EOF
 ```
@@ -135,7 +147,7 @@ ls -l /dev/dri
 
 You should see something like:
 
-```
+```txt
 crw-rw---- 1 root render 226, 128 renderD128
 ```
 
