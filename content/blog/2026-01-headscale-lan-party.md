@@ -23,9 +23,14 @@ no need for port forwarding, no subscriptions only maintenance.
 ## The Setup
 
 Headscale runs on my Proxmox cluster as an LXC, similar to my Plex setup. It
-sits in my Internal Services `VLAN 21` and is exposed to the internet through a
+sits in my Public Services `VLAN 22` and is exposed to the internet through a
 reverse proxy with a valid TLS certificate. Tailscale clients are picky about
 HTTPS.
+
+> Even though Headscale is behind a reverse proxy, I keep it in the public
+> services VLAN rather than internal services. External hosts connect to it,
+> so if it gets compromised I'd rather the attacker land in my DMZ than
+> somewhere with more internal access.
 
 The rough architecture looks like this:
 
@@ -63,7 +68,7 @@ pct create "$CTID" "local:vztmpl/debian-13-standard_13.1-2_amd64.tar.zst" \
     --memory "1024" \
     --swap "0" \
     --rootfs "local-lvm:4" \
-    --net0 "name=eth0,bridge=vmbr0,ip=192.168.32.15/24,gw=192.168.32.1,tag=21"\
+    --net0 "name=eth0,bridge=vmbr0,ip=192.168.33.15/24,gw=192.168.33.1,tag=22"\
     --unprivileged "1" \
     --onboot 1
 
@@ -146,10 +151,10 @@ some point but the following is what I need for Headscale:
     }
 }
 
-# Headscale Control Server (svc-headscale LXC: 192.168.32.15)
+# Headscale Control Server (svc-headscale LXC: 192.168.33.15)
 hs.lachlancox.dev {
     import cloudflare-tls
-    reverse_proxy 192.168.32.15:8080 
+    reverse_proxy 192.168.33.15:8080 
 }
 ```
 

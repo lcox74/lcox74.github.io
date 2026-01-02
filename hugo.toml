@@ -39,3 +39,7 @@ enableRobotsTXT = true
 [[menu.main]]
     name = "Blog"
     url = "/blog"
+
+[[menu.main]]
+    name = "Homelab"
+    url = "/homelab"
