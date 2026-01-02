@@ -1,0 +1,41 @@
+baseURL = 'https://lachlancox.dev'
+languageCode = 'en-us'
+title = 'Lachlan Cox'
+author = 'Lachlan Cox'
+copyright = 'Lachlan Cox'
+
+theme = "bearblog"
+
+enableRobotsTXT = true
+
+[params]
+    description = "Notes on software, homelabs, and things I probably overthought."
+
+    # SEO and social sharing
+    title = "Lachlan Cox"
+    favicon = "/favicon.ico"
+    images = ["/images/share.png"]
+
+    # Theme options
+    dateFormat = "2006.01.02"
+    hideMadeWithLine = true
+    enablePostNavigator = true
+
+[minify]
+  minifyOutput = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[markup]
+    [markup.highlight]
+        style = "catppuccin-mocha"
+        noClasses = false
+        codeFences = true
+
+[[menu.main]]
+    name = "Blog"
+    url = "/blog"
