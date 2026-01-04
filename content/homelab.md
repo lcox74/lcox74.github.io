@@ -9,32 +9,7 @@ so having my own cluster to break helps me break theirs less often.
 
 ## Network Diagram
 
-```txt
-                          [WAN / NBN HFC]
-                                 │
-                            [UDM-Pro]
-                                 │
-         ┌───────────────────────┼───────────────────────┐
-         │                       │                       │
-    [Door Hub]              [USW-Flex]             [Aggregation]
-         │                       │                       │
-     [Camera]              ┌─────┴─────┐         ┌───────┼─────────┐
-                           │           │         │       │         │
-                      [Camera x2]  [U6-Pro]    [UNAS]  [UNAS]  [Pro-Max-24]
-                                       │                           │
-                                   ~~Mesh~~                    [Proxmox x4]
-                                       │
-                       ┌───────────────┴───────────────┐
-                       │                               │
-                  [U6-Mesh]                       [U6-Mesh]
-                       │                               │
-                [Lite-8-PoE]                   [Lite-8-PoE]
-                       │                               │
-                   [Study]                        [Living]
-```
-
-> **Note:** I might actually make a graphic for this instead of the ASCII art. 
-This was way too much effort to build and I dread needing to add to it.
+![Homelab Network Architecture](/images/homelab-arch.png)
 
 ## Hardware
 
