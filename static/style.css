@@ -18,6 +18,8 @@ h1, h2, h3 {
 
 /* Tables */
 table {
+  display: block;
+  overflow-x: auto;
   border-collapse: collapse;
   margin: 1em 0;
 }
