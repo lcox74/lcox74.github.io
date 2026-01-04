@@ -144,8 +144,11 @@ I have a LXC reverse proxy running [caddy](https://caddyserver.com/) called
 some point but the following is what I need for Headscale:
 
 ```caddyfile
-(cloudflare-tls) {
+{
     email {env.CLOUDFLARE_EMAIL}
+}
+
+(cloudflare-tls) {
     tls {
         dns cloudflare {env.CLOUDFLARE_API_TOKEN}
     }
