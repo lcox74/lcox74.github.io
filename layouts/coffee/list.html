@@ -1,0 +1,26 @@
+{{ define "main" }}
+<content>
+  {{ if .Content }}
+  {{ .Content }}
+  {{ end }}
+
+  <div class="blog-posts">
+    {{ range .Pages }}
+    <article class="post-entry">
+      <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
+      <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+      {{ with .Params.summary }}
+      <p class="post-summary">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.tags }}
+      <div class="post-tags">
+        {{ range . }}<a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a> {{ end }}
+      </div>
+      {{ end }}
+    </article>
+    {{ else }}
+    <p>No coffee logged yet. The cup remains empty.</p>
+    {{ end }}
+  </div>
+</content>
+{{ end }}

@@ -45,8 +45,9 @@ almost in beta, which in software terms means "it works on my machine version
 ## Side Quests
 
 - **[Blog](/blog)** - Software, self-hosting, and things I got nerd-sniped by
-- **Coffee** - Reviews from someone who drinks too much of it (coming soon)
-- **Drinks** - Beer, wine, and spirits. Mostly beer. (coming soon)
+- **[Coffee](/coffee)** - Reviews from someone who drinks too much of it
+- **[Untappd](https://untappd.com/user/lachlan_cox_7126)** - Beer logging for
+    someone who drinks alot of weird things at breweries.
 
 ## Idle Animations
 
